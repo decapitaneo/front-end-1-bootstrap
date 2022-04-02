@@ -1,0 +1,70 @@
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  color: whitesmoke;
+  font-weight: 300;
+}
+
+.card-title {
+  font-weight: 900;
+  font-size: 4.5rem;
+  line-height: 84px;
+  color: #ff523b;
+}
+
+.card-text {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 28px;
+  padding-bottom: 30px;
+}
+
+.btn__banner {
+  background-color: #ff523b;
+  transition: background 0.5s; /*quando acrescentar o hover*/
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 28px;
+  color: whitesmoke;
+  padding: 22px 112px;
+  border-radius: 8px;
+  border: #ff523b;
+  box-shadow: 0px 16px 15px -9px rgba(0, 0, 0, 0.21);
+}
+
+.btn__banner:hover {
+  opacity: 80%;
+}
+
+.destaques h2 {
+  color: #ff523b;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 75px;
+}
+
+.card-body h5 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 28px;
+}
+
+.card-body p {
+  line-height: 21px;
+  text-align: justify;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.card-body .btn {
+}
+
+@media screen {
+  .card-title {
+    /*font-size: 2.5rem;*/
+  }
+}
