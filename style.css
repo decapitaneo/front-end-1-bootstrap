@@ -60,9 +60,40 @@ body {
   color: rgba(0, 0, 0, 0.75);
 }
 
+.col-lg-4 {
+  padding-left: 20px;
+  border-radius: 12px;
+}
 .card-body .btn {
+  background: #5dc285;
+  border: #5dc285;
 }
 
+.card-body .btn:hover {
+  opacity: 70%;
+  font-weight: 900;
+}
+footer .container {
+  background: #171717;
+}
+
+.footer__geral {
+  padding: 80px 83px 0 83px;
+}
+
+.footer__autor__nome {
+}
+
+.footer__checkpoint {
+  padding-bottom: 80px;
+  padding-top: 80px;
+  font-size: 1.3rem;
+  line-height: 28px;
+}
+
+.footer__linkdin {
+  padding-right: 16px;
+}
 @media screen {
   .card-title {
     /*font-size: 2.5rem;*/
