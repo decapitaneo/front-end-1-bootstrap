@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 /*usado em todo o html*/
 html {
@@ -103,7 +103,6 @@ body {
   font-weight: 900;
 }
 
-
 /*Página Details*/
 .carousel-item {
   width: 100%;
@@ -164,7 +163,6 @@ h6 {
   font-size: 18px;
 }
 
-
 .txt-card {
   margin: 0 20px;
   font-weight: 300;
@@ -192,7 +190,6 @@ h6 {
   background-color: #94f7bc;
 }
 
-
 /*footer*/
 footer .container {
   background: #171717;
@@ -203,8 +200,8 @@ footer .container {
   padding: 80px 83px 0 83px;
 }
 
-
-.footer__autor__nome {}
+.footer__autor__nome {
+}
 
 .footer__checkpoint {
   padding-bottom: 80px;
@@ -217,14 +214,12 @@ footer .container {
   padding-right: 16px;
 }
 
-
 @media screen {
   /*Details*/
 
-  .logo{
-max-width: 40%;
+  .logo {
+    max-width: 40%;
   }
-
 
   /*Account*/
 
@@ -287,24 +282,43 @@ max-width: 40%;
     opacity: 80%;
   }
 
-
-  @media (mix-width: 768px) {
-
-    .modal-dialog {
-      max-width: 653px;
+  @media (max-width: 768px) {
+    .card-title {
+      font-size: 2.5rem;
     }
-
-    #header .navbar-collapse {
-      width: 100%;
+    .card-text {
+      font-size: 1.5rem;
     }
+}
 
-    .col-lg-3 {
-      max-width: 50%;
-    }
+@media (mix-width: 768px) {
+  .modal-dialog {
+    max-width: 653px;
   }
 
-  /* A primeira linha de todo elemento <p>. */
-  /*
+  #header .navbar-collapse {
+    width: 100%;
+  }
+
+  .col-lg-3 {
+    max-width: 50%;
+  }
+}
+
+
+@media (min-width: 428px) and (max-width: 768px) {
+  .card-title {
+    font-size: 1.8rem;
+  }
+  .card-text {
+    font-size: 1rem;
+  }
+  
+    
+  }
+
+/* A primeira linha de todo elemento <p>. */
+/*
 p::first-line {
   color: blue;
   text-transform: uppercase;
