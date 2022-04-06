@@ -32,9 +32,7 @@ body {
 }
 
 .banner {
-  /*Imagem principal da página*/
   background-size: contain;
-  /*Tamanho da imagem de fundo - contain fará quem ela siga o tamanho da página*/
 }
 
 .card-title {
@@ -91,6 +89,19 @@ body {
   color: rgba(0, 0, 0, 0.75);
 }
 
+#loginP {
+  color: var(--secondary-color);
+}
+
+#home {
+  color: var(--primary-color);
+}
+
+#home:hover {
+  color: var(--secondary-color);
+  box-shadow: 0px 16px 15px -9px rgba(0, 0, 0, 0.21);
+}
+
 #produtos {
   padding-top: 34px;
   padding-bottom: 34px;
@@ -103,6 +114,11 @@ body {
 .col-lg-4 {
   padding-left: 20px;
   border-radius: 12px;
+  transition: transform 0.2s; /* Animation */
+}
+
+.col-lg-4:hover {
+  transform: scale(1.05);
 }
 
 .gallery {
@@ -112,13 +128,6 @@ body {
 .gallery .container .card {
   height: 512px;
 }
-
-/*
-.gallery .container .col-lg-4 {
-  padding-top : 40px;
-  padding-bottom: 40px;
-}
-*/
 
 .gallery .card-body {
   background: #f4f4f4;
@@ -135,7 +144,7 @@ body {
   font-weight: 900;
 }
 
-/*Página Details*/
+/*----Página Details----*/
 .carousel-item {
   width: 100%;
   max-height: 400px;
@@ -321,22 +330,22 @@ form {
   background: #33bb69;
   opacity: 80%;
 }
+/*
 
 @media (max-width: 768px) {
-  .card-title {
-    font-size: 2.5rem;
-  }
-  .card-text {
-    font-size: 1.5rem;
-  }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .modal-dialog {
     max-width: 500px;
     max-height: 250px;
   }
-
+  form {
+    padding-top: 0;
+  }
+  .form__mb-3 {
+    padding-bottom: 20px;
+  }
   #header .navbar-collapse {
     width: 100%;
   }
@@ -344,9 +353,30 @@ form {
   .col-lg-3 {
     max-width: 50%;
   }
+  .card-title {
+    font-size: 2rem;
+  }
+  .card-text {
+    font-size: 1.5rem;
+    line-height: 28px;
+  }
+}
+*/
+
+@media (min-width: 900px) {
 }
 
 @media (min-width: 428px) and (max-width: 768px) {
+  .modal-dialog {
+    max-width: 500px;
+    max-height: 250px;
+  }
+  form {
+    padding-top: 0;
+  }
+  .form__mb-3 {
+    padding-bottom: 20px;
+  }
   .card-title {
     font-size: 1.8rem;
   }
@@ -354,9 +384,14 @@ form {
     font-size: 1rem;
   }
   .card-img-overlay button {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
-
+  .mt-5 {
+    margin-top: 0;
+  }
+  .card-img-overlay .card-text {
+    padding-bottom: 0;
+  }
   .footer__autor__nome p {
     font-size: 0.8rem;
     margin-bottom: 0;
