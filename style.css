@@ -236,9 +236,6 @@ footer .container {
   padding: 80px 83px 0 83px;
 }
 
-.footer__autor__nome {
-}
-
 .footer__checkpoint {
   padding-bottom: 80px;
   padding-top: 80px;
@@ -358,6 +355,26 @@ form {
   }
   .card-img-overlay button {
     margin-bottom: 80px;
+  }
+
+  .footer__autor__nome p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+  #footer_redes__sociais__a {
+    padding-bottom: 32px;
+  }
+
+  .footer__geral {
+    padding: 42px 15px 70px 15px;
+  }
+
+  .footer__autor {
+  }
+
+  .footer__checkpoint {
+    padding-bottom: 0;
+    font-size: 1rem;
   }
 }
 
