@@ -35,37 +35,37 @@ body {
 
 .banner {
   background-size: contain;
-}
 
-.card-title {
-  font-weight: 900;
-  font-size: 4.5rem;
-  line-height: 84px;
-  color: var(--primary-color);
-}
+  .card-title {
+    font-weight: 900;
+    font-size: 4.5rem;
+    line-height: 84px;
+    color: var(--primary-color);
+  }
 
-.card-text {
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 28px;
-  padding-bottom: 30px;
-}
+  .card-text {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 28px;
+    padding-bottom: 30px;
+  }
 
-.btn__banner {
-  background-color: var(--primary-color);
-  transition: background 0.5s;
-  font-weight: 400;
-  font-size: 1.3rem;
-  line-height: 28px;
-  color: var(--background-color);
-  padding: 22px 112px;
-  border-radius: 8px;
-  border: var(--primary-color);
-  box-shadow: 0px 16px 15px -9px rgba(0, 0, 0, 0.21);
-}
+  .btn__banner {
+    background-color: var(--primary-color);
+    transition: background 0.5s;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 28px;
+    color: var(--background-color);
+    padding: 22px 112px;
+    border-radius: 8px;
+    border: var(--primary-color);
+    box-shadow: 0px 16px 15px -9px rgba(0, 0, 0, 0.21);
 
-.btn__banner:hover {
-  opacity: 80%;
+    .btn__banner:hover {
+      opacity: 80%;
+    }
+  }
 }
 
 .destaques h2 {
@@ -78,6 +78,7 @@ body {
 .destaques .col-lg-4 {
   padding-bottom: 34px;
 }
+
 .card-body h5 {
   font-weight: 700;
   font-size: 1.3rem;
@@ -95,20 +96,20 @@ body {
   color: var(--secondary-color);
   transition: transform 0.2s; /* Animation */
   box-shadow: 0px 16px 15px -9px rgba(0, 0, 0, 0.11);
-}
 
-#loginP:hover {
-  transform: scale(1.2);
+  #loginP:hover {
+    transform: scale(1.2);
+  }
 }
 
 #home {
   color: var(--primary-color);
   transition: transform 0.2s; /* Animation */
   box-shadow: 0px 16px 15px -9px rgba(0, 0, 0, 0.11);
-}
 
-#home:hover {
-  transform: scale(1.2);
+  #home:hover {
+    transform: scale(1.2);
+  }
 }
 
 #produtos {
@@ -124,16 +125,17 @@ body {
   padding-left: 20px;
   border-radius: 12px;
   transition: transform 0.2s; /* Animation */
-}
 
-.col-lg-4:hover {
-  transform: scale(1.05);
+  .col-lg-4:hover {
+    transform: scale(1.05);
+  }
 }
 
 .gallery {
   width: 100%;
   height: 100%;
 }
+
 .gallery .container .card {
   height: 512px;
 }
@@ -153,95 +155,104 @@ body {
   font-weight: 900;
 }
 
-/*----Página Details----*/
-.carousel-item {
-  width: 100%;
-  max-height: 400px;
+.img__banner {
+  max-height: 500px;
   background-size: contain;
-}
-
-.post__details {
-  display: flex;
-  flex-direction: row;
-  font-size: 1.1em;
-  padding: 0 20px;
-  line-height: 1.6em;
-  font-family: 'Roboto', sans-serif;
-  margin: 0 auto;
-  max-width: 1050px;
-}
-
-.container__details {
-  margin: 50px 80px;
-}
-
-.col-lg-3 {
-  width: 370px;
-  display: block;
-  border-radius: 8px;
+  border-end-end-radius: 15px;
   max-width: 100%;
 }
 
-h1 {
-  text-transform: uppercase;
+.post__details {
+  margin-bottom: 2px;
+  padding: 0px;
+}
+
+.title {
   color: var(--primary-color);
+  text-transform: uppercase;
   font-weight: bold;
   line-height: 1em;
   font-size: 40px;
-}
-
-h5 {
-  font-weight: 500;
-}
-
-h6 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 24px;
-  color: var(--primary-color);
-  margin-top: 40px;
+  margin-bottom: 50px;
+  margin-top: 30px;
 }
 
 .txt__destaque {
   text-align: justify;
-  font-size: 22px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 20px;
 }
 
 .txt {
-  font-weight: 300;
   text-align: justify;
-  font-size: 18px;
+  text-decoration: none;
+  font-size: 16px;
 }
 
-.txt-card {
-  margin: 0 20px;
-  font-weight: 300;
-  text-align: justify;
-  font-size: 14px;
+#subtitle {
+  margin-top: 20px;
+  color: black;
+  font-size: 24px;
+  margin-bottom: 50px;
 }
 
-.card-img-details {
-  height: 200px;
-  background-size: contain;
-}
-
-.col-md-4 img {
+.section__cards {
+  display: flex;
+  flex-direction: row;
   max-width: 100%;
 }
 
-.col-lg-4 img {
-  height: 241px;
+.card__deck {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.card__deck .card {
+  margin: 4px;
+  border-radius: 15px;
+  height: 550px;
+  transition: transform 0.2s;
+}
+
+.card-img-top {
+  height: 230px;
+  border-radius: 15px;
+  max-width: 100%;
 }
 
 .card-txt {
   font-weight: bold;
   background-color: var(--tertiary-color);
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 12px;
 }
 
-.card-footer {
-  height: auto;
-  color: var(--background-color);
-  background-color: #94f7bc;
+.txt-card p {
+  margin: 0 10px;
+  font-weight: 300;
+  text-align: justify;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 28px;
+  padding-bottom: 30px;
+}
+
+ul {
+  flex-direction: column;
+  justify-content: end;
+}
+
+#card-footer {
+  background-color: #b2f0ca;
+  border-radius: 15px;
+  display: flex;
 }
 
 /*footer*/
@@ -266,14 +277,12 @@ footer .container {
 }
 
 @media screen {
-  /*Details*/
 
   .logo {
     max-width: 40%;
   }
 }
 
-/*---------ACCOUNT--------*/
 
 form {
   padding-left: 50px;
