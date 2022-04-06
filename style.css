@@ -75,6 +75,9 @@ body {
   line-height: 75px;
 }
 
+.destaques .col-lg-4 {
+  padding-bottom: 34px;
+}
 .card-body h5 {
   font-weight: 700;
   font-size: 1.3rem;
@@ -91,7 +94,7 @@ body {
 #produtos {
   padding-top: 34px;
   padding-bottom: 34px;
-  color:var(--primary-color);
+  color: var(--primary-color);
   font-weight: 900;
   font-size: 3.5rem;
   line-height: 75px;
@@ -102,12 +105,23 @@ body {
   border-radius: 12px;
 }
 
+.gallery {
+  width: 100%;
+  height: 100%;
+}
 .gallery .container .card {
   height: 512px;
 }
 
+/*
+.gallery .container .col-lg-4 {
+  padding-top : 40px;
+  padding-bottom: 40px;
+}
+*/
+
 .gallery .card-body {
-  background: #F4F4F4;
+  background: #f4f4f4;
   box-shadow: 0px 16px 15px -9px rgba(0, 0, 0, 0.21);
 }
 
@@ -197,6 +211,10 @@ h6 {
   max-width: 100%;
 }
 
+.col-lg-4 img {
+  height: 241px;
+}
+
 .card-txt {
   font-weight: bold;
   background-color: var(--tertiary-color);
@@ -238,81 +256,88 @@ footer .container {
   .logo {
     max-width: 40%;
   }
-
-
-  /*---------ACCOUNT--------*/
-
-  .modal-header {
-    border: none;
-  }
-
-  .modal-body {
-    padding-bottom: 32px;
-  }
-
-  .moda-header button {
-    padding-top: 16px;
-    padding-right: 32px;
-    width: 18px;
-    height: 41px;
-  }
-
-  .modal-header img {
-    padding-top: 33px;
-    padding-bottom: 39px;
-  }
-
-  .modal-dialog {
-    width: 653px;
-    height: 629px;
-  }
-
-  .form__mb-3 {
-    padding-bottom: 85px;
-  }
-
-  .mb-3 {
-    font-size: 24px;
-    line-height: 28px;
-    color: rgba(0, 0, 0, 0.75);
-  }
-
-  .mb-3:first-child {
-    padding-bottom: 24px;
-  }
-
-  .modal-footer {
-    background: #33bb69;
-    border-radius: 12px;
-  }
-
-  .btn__login {
-    background: #33bb69;
-    border: none;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    letter-spacing: 0.06em;
-  }
-
-  .btn__login:hover {
-    background: #33bb69;
-    opacity: 80%;
-  }
-
-  @media (max-width: 768px) {
-    .card-title {
-      font-size: 2.5rem;
-    }
-    .card-text {
-      font-size: 1.5rem;
-    }
 }
 
-@media (mix-width: 768px) {
+/*---------ACCOUNT--------*/
+
+form {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 100px;
+}
+
+.modal-header {
+  border: none;
+}
+
+.modal-body {
+  padding-bottom: 32px;
+}
+
+.moda-header button {
+  padding-top: 16px;
+  padding-right: 32px;
+  width: 18px;
+  height: 41px;
+}
+
+.modal-header img {
+  padding-top: 33px;
+  padding-bottom: 39px;
+}
+
+.modal-dialog {
+  width: 653px;
+  height: 629px;
+}
+
+.form__mb-3 {
+  padding-bottom: 85px;
+}
+
+.mb-3 {
+  font-size: 24px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.mb-3:first-child {
+  padding-bottom: 24px;
+}
+
+.modal-footer {
+  background: #33bb69;
+  border-radius: 12px;
+}
+
+.btn__login {
+  background: #33bb69;
+  border: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.btn__login:hover {
+  background: #33bb69;
+  opacity: 80%;
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 2.5rem;
+  }
+  .card-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
   .modal-dialog {
-    max-width: 653px;
+    max-width: 500px;
+    max-height: 250px;
   }
 
   #header .navbar-collapse {
@@ -324,7 +349,6 @@ footer .container {
   }
 }
 
-
 @media (min-width: 428px) and (max-width: 768px) {
   .card-title {
     font-size: 1.8rem;
@@ -332,9 +356,10 @@ footer .container {
   .card-text {
     font-size: 1rem;
   }
-  
-    
+  .card-img-overlay button {
+    margin-bottom: 80px;
   }
+}
 
 /* A primeira linha de todo elemento <p>. */
 /*
