@@ -162,6 +162,14 @@ body {
   max-width: 100%;
 }
 
+.section__details {
+  padding: 20px 80px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+
 .post__details {
   margin-bottom: 2px;
   padding: 0px;
