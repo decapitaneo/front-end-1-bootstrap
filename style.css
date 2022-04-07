@@ -158,7 +158,6 @@ body {
   font-weight: 900;
 }
 
-/*----Página Details----*/
 .img__banner {
   max-height: 500px;
   background-size: contain;
@@ -289,12 +288,10 @@ footer .container {
 }
 
 @media screen {
-  /*Details*/
   .logo {
     max-width: 40%;
   }
 }
-/*---------ACCOUNT--------*/
 form {
   padding-left: 50px;
   padding-right: 50px;
@@ -360,7 +357,7 @@ form {
   opacity: 80%;
 }
 
-/*
+
 @media (max-width: 768px) {
   .modal-dialog {
     max-width: 500px;
@@ -387,7 +384,9 @@ form {
     line-height: 28px;
   }
 }
-*/
+
+
+
 @media (min-width: 428px) and (max-width: 768px) {
   .modal-dialog {
     max-width: 500px;
@@ -439,4 +438,24 @@ form {
     padding-bottom: 0;
     font-size: 1rem;
   }
-}/*# sourceMappingURL=style.css.map */
+
+  .img__banner {
+    background-size: contain;
+  }
+  .title {
+  font-size: 18px;
+  }
+  
+  .section__details {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  
+  .post__details {
+  padding-left: 2px;
+  }
+
+  
+}/*# sourceMappingURL=style.css.map*/
