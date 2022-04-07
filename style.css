@@ -51,7 +51,7 @@ body {
   padding-bottom: 30px;
 }
 
-.col-lg-4 .card {
+.col-lg-4 #cardIndex {
   border: none;
 }
 
