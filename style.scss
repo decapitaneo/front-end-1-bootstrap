@@ -164,7 +164,7 @@ body {
 
 .section__details {
   padding: 20px 80px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: row;
   max-width: 100%;
@@ -285,12 +285,10 @@ footer .container {
 }
 
 @media screen {
-
   .logo {
     max-width: 40%;
   }
 }
-
 
 form {
   padding-left: 50px;
@@ -357,7 +355,6 @@ form {
   opacity: 80%;
 }
 
-/*
 @media (max-width: 768px) {
   .modal-dialog {
     max-width: 500px;
@@ -384,7 +381,6 @@ form {
     line-height: 28px;
   }
 }
-*/
 
 @media (min-width: 428px) and (max-width: 768px) {
   .modal-dialog {
